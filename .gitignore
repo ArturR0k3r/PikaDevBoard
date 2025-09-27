@@ -1,0 +1,228 @@
+# .gitignore for PikaDevBoard
+
+# STM32CubeIDE specific files
+.metadata/
+.settings/
+.project
+.cproject
+**/.settings/
+**/Debug/
+**/Release/
+
+# STM32 build outputs
+*.bin
+*.elf
+*.hex
+*.map
+*.list
+*.su
+*.o
+*.d
+
+# CubeMX generated files (keep .ioc, ignore others)
+Middlewares/
+Drivers/CMSIS/
+Drivers/STM32F*xx_HAL_Driver/
+Inc/stm32f*xx_hal_conf.h
+Inc/stm32f*xx_it.h
+Src/stm32f*xx_hal_msp.c
+Src/stm32f*xx_it.c
+Src/system_stm32f*xx.c
+startup_stm32f*.s
+STM32F*RETX_FLASH.ld
+STM32F*RETX_RAM.ld
+
+# Keep these CubeMX files
+!*.ioc
+!Core/
+
+# IDE files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Compiled Object files
+*.o
+*.obj
+*.elf
+*.gch
+*.pch
+*.pdb
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.hex
+*.bin
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# KiCad specific
+# Backup files
+*.bak
+*.bck
+*-bak
+*-cache.lib
+*-cache.dcm
+*-rescue.lib
+*-rescue.dcm
+*.kicad_pcb-bak
+*.sch-bak
+
+# Temporary files
+*.000
+*.tmp
+*~$*
+
+# Log files
+*.log
+
+# Eagle specific
+*.s#?
+*.b#?
+*.l#?
+*.lck
+
+# Altium specific  
+*.SchDoc.Zip
+*.PcbDoc.Zip
+History/
+Project\ Logs*/
+
+# Gerber and drill files (uncomment if you don't want to track them)
+# *.gbr
+# *.gbl
+# *.gtl
+# *.gbs
+# *.gts  
+# *.gbo
+# *.gto
+# *.drl
+# *.xln
+
+# Manufacturing files
+# gerber/
+# drill/
+# pick_and_place/
+# assembly/
+
+# Documentation builds
+docs/_build/
+site/
+
+# Python (if using any Python tools)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+pip-log.txt
+
+# Node.js (if using any web tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Vim
+*.swp
+*.swo
+*~
+Session.vim
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# JetBrains IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tgz
+*.7z
+*.rar
+
+# Personal notes
+notes.txt
+todo.txt
+README_personal.md
+
+# Test results
+test_results/
+*.testlog
+
+# Simulation files
+*.sim
+*.wdb
