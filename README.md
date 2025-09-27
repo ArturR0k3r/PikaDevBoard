@@ -62,9 +62,9 @@ Before you start, make sure you have:
 
 1. **Hardware Setup**
    ```
-   1. Connect your STM32 microcontroller to the PikaDevBoard
+   1. Connect your PikaDevBoard
    2. Connect ST-Link V2 to the programming header
-   3. Connect USB cable for power
+   3. Connect USB cable for power in case you want to power it not from stlink
    4. Verify all connections are secure
    ```
 
